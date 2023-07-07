@@ -1,13 +1,36 @@
-# REST API
+## Japanese Syntax Checker
+[textlint](https://textlint.github.io/)を用いてpostされた日本語の構文チェックを行い、その結果を返します。
 
-A template of REST API app using Oak framework
-
-Start the server with the command:
-
+### Request型
+```ts
+type Request = {
+  text: string;
+};
 ```
-deno run --allow-net main.ts
+
+### Response型
+```ts
+type Request = {
+  text: string;
+  messages: {
+    type: "lint";
+    ruleId: string;
+    message: string;
+    index: number;
+    line: number;
+    column: number;
+    range: number[];
+    loc: {
+      start: {
+        line: number;
+        column: number;
+      };
+      end: {
+        line: number;
+        column: number;
+      };
+    };
+    severity: number;
+  };
+};
 ```
-
-This starts the server at http://localhost:8000/
-
-Try go to http://localhost:8000/api/Brachiosaurus or http://localhost:8000/api/
