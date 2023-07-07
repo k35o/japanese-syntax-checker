@@ -1,26 +1,16 @@
 import { Application, Router } from "https://deno.land/x/oak@v12.5.0/mod.ts";
 import { oakCors } from "https://deno.land/x/cors@v1.2.2/mod.ts";
-import data from "./data.json" assert { type: "json" };
 
 const router = new Router();
 router
-  .get("/", (context) => {
-    context.response.body = "Welcome to dinosaur API!";
-  })
-  .get("/api", (context) => {
-    context.response.body = data;
-  })
-  .get("/api/:dinosaur", (context) => {
-    if (context?.params?.dinosaur) {
-      const found = data.find((item) =>
-        item.name.toLowerCase() === context.params.dinosaur.toLowerCase()
-      );
-      if (found) {
-        context.response.body = found;
-      } else {
-        context.response.body = "No dinosaurs found.";
-      }
+  .post("/", async (context) => {
+    const body = context.request.body();
+    if (body.type !== "json") {
+      context.response.status = 400;
+      context.response.body = { msg: "Invalid body type" };
+      return;
     }
+    context.response.body = await body.value;
   });
 
 const app = new Application();
