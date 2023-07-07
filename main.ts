@@ -1,5 +1,6 @@
 import { Application, Router } from "https://deno.land/x/oak@v12.5.0/mod.ts";
 import { oakCors } from "https://deno.land/x/cors@v1.2.2/mod.ts";
+import { z } from "https://deno.land/x/zod@v3.21.4/mod.ts";
 
 const router = new Router();
 router
@@ -10,7 +11,18 @@ router
       context.response.body = { msg: "Invalid body type" };
       return;
     }
-    context.response.body = await body.value;
+
+    const parsedBody = (z.object({
+      text: z.string(),
+    })).safeParse(await body.value);
+
+    if (!parsedBody.success) {
+      context.response.status = 400;
+      context.response.body = { msg: "Invalid body" };
+      return;
+    }
+
+    context.response.body = parsedBody.data;
   });
 
 const app = new Application();
