@@ -24,12 +24,15 @@ dependencies:
     version: 3.21.4
 
 devDependencies:
+  '@types/node':
+    specifier: ^20.4.1
+    version: 20.4.1
   typescript:
     specifier: ^5.1.6
     version: 5.1.6
   vercel:
     specifier: ^31.0.1
-    version: 31.0.1(@types/node@14.18.33)
+    version: 31.0.1(@types/node@20.4.1)
 
 packages:
 
@@ -2128,7 +2131,7 @@ packages:
     dependencies:
       '@types/http-cache-semantics': 4.0.1
       '@types/keyv': 3.1.4
-      '@types/node': 14.18.33
+      '@types/node': 20.4.1
       '@types/responselike': 1.0.0
     dev: true
 
@@ -2162,7 +2165,7 @@ packages:
     resolution: {integrity: sha512-ZUxbzKl0IfJILTS6t7ip5fQQM/J3TJYubDm3nMbgubNNYS62eXeUpoLUC8/7fJNiFYHTrGPQn7hspDUzIHX3UA==}
     dependencies:
       '@types/minimatch': 5.1.2
-      '@types/node': 14.18.33
+      '@types/node': 20.4.1
     dev: true
 
   /@types/hast@2.3.4:
@@ -2181,7 +2184,7 @@ packages:
   /@types/keyv@3.1.4:
     resolution: {integrity: sha512-BQ5aZNSCpj7D6K2ksrRCTmKRLEpnPvWDiLPfoGyhZ++8YtiK9d/3DBKPJgry359X/P1PfruyYwvnvwFjuEiEIg==}
     dependencies:
-      '@types/node': 14.18.33
+      '@types/node': 20.4.1
     dev: true
 
   /@types/mdast@3.0.11:
@@ -2204,16 +2207,19 @@ packages:
   /@types/node-fetch@2.6.3:
     resolution: {integrity: sha512-ETTL1mOEdq/sxUtgtOhKjyB2Irra4cjxksvcMUR5Zr4n+PxVhsCD9WS46oPbHL3et9Zde7CNRr+WUNlcHvsX+w==}
     dependencies:
-      '@types/node': 14.18.33
+      '@types/node': 20.4.1
       form-data: 3.0.1
 
   /@types/node@14.18.33:
     resolution: {integrity: sha512-qelS/Ra6sacc4loe/3MSjXNL1dNQ/GjxNHVzuChwMfmk7HuycRLVQN2qNY3XahK+fZc5E2szqQSKUyAF0E+2bg==}
 
+  /@types/node@20.4.1:
+    resolution: {integrity: sha512-JIzsAvJeA/5iY6Y/OxZbv1lUcc8dNSE77lb2gnBH+/PJ3lFR1Ccvgwl5JWnHAkNHcRsT0TbpVOsiMKZ1F/yyJg==}
+
   /@types/responselike@1.0.0:
     resolution: {integrity: sha512-85Y2BjiufFzaMIlvJDvTTB8Fxl2xfLo4HgmHzVBz08w4wDePCTjYw66PdrolO0kzli3yam/YCgRufyo1DdQVTA==}
     dependencies:
-      '@types/node': 14.18.33
+      '@types/node': 20.4.1
     dev: true
 
   /@types/unist@2.0.6:
@@ -2246,7 +2252,7 @@ packages:
       outdent: 0.8.0
     dev: true
 
-  /@vanilla-extract/integration@6.2.1(@types/node@14.18.33):
+  /@vanilla-extract/integration@6.2.1(@types/node@20.4.1):
     resolution: {integrity: sha512-+xYJz07G7TFAMZGrOqArOsURG+xcYvqctujEkANjw2McCBvGEK505RxQqOuNiA9Mi9hgGdNp2JedSa94f3eoLg==}
     dependencies:
       '@babel/core': 7.22.8
@@ -2260,8 +2266,8 @@ packages:
       lodash: 4.17.21
       mlly: 1.4.0
       outdent: 0.8.0
-      vite: 4.4.2(@types/node@14.18.33)
-      vite-node: 0.28.5(@types/node@14.18.33)
+      vite: 4.4.2(@types/node@20.4.1)
+      vite-node: 0.28.5(@types/node@20.4.1)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -2379,10 +2385,10 @@ packages:
       - supports-color
     dev: true
 
-  /@vercel/remix-builder@1.8.15(@types/node@14.18.33):
+  /@vercel/remix-builder@1.8.15(@types/node@20.4.1):
     resolution: {integrity: sha512-NV6YU2hwj1faLpldKEQmYWJ6+aGYUJLx2sCkWoEQy+WP9i4wHw0c3u+y+PfMlr3VBn1VIlDh1awf0NRXMcIEQg==}
     dependencies:
-      '@remix-run/dev': /@vercel/remix-run-dev@1.18.0(@types/node@14.18.33)
+      '@remix-run/dev': /@vercel/remix-run-dev@1.18.0(@types/node@20.4.1)
       '@vercel/build-utils': 6.8.0
       '@vercel/nft': 0.22.5
       '@vercel/static-config': 2.0.17
@@ -2406,7 +2412,7 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@vercel/remix-run-dev@1.18.0(@types/node@14.18.33):
+  /@vercel/remix-run-dev@1.18.0(@types/node@20.4.1):
     resolution: {integrity: sha512-5vGcc3OTBLZImKY0BMXDXDqdh0mjh4ZqptI9eRwXZ9O5AfGp4Ce7Q8tNldazBVOJMM4fGgLeXRIOTfuRDe5tDA==}
     engines: {node: '>=14.0.0'}
     hasBin: true
@@ -2427,7 +2433,7 @@ packages:
       '@babel/types': 7.22.5
       '@npmcli/package-json': 2.0.0
       '@remix-run/server-runtime': 1.18.0
-      '@vanilla-extract/integration': 6.2.1(@types/node@14.18.33)
+      '@vanilla-extract/integration': 6.2.1(@types/node@20.4.1)
       arg: 5.0.2
       cacache: 15.3.0
       chalk: 4.1.2
@@ -8180,7 +8186,7 @@ packages:
     engines: {node: '>= 0.8'}
     dev: true
 
-  /vercel@31.0.1(@types/node@14.18.33):
+  /vercel@31.0.1(@types/node@20.4.1):
     resolution: {integrity: sha512-Tf6PsIseRtAw/PETRfBdGqnbG/el1g0prwaKCXm6Dq5CcKRoya3ntT2E38fHE9pXIPDqE1XdTn9F1crKm8sKAQ==}
     engines: {node: '>= 14'}
     hasBin: true
@@ -8193,7 +8199,7 @@ packages:
       '@vercel/node': 2.15.3
       '@vercel/python': 3.1.60
       '@vercel/redwood': 1.1.15
-      '@vercel/remix-builder': 1.8.15(@types/node@14.18.33)
+      '@vercel/remix-builder': 1.8.15(@types/node@20.4.1)
       '@vercel/ruby': 1.3.76
       '@vercel/static-build': 1.3.38
     transitivePeerDependencies:
@@ -8247,7 +8253,7 @@ packages:
       vfile-message: 3.1.4
     dev: true
 
-  /vite-node@0.28.5(@types/node@14.18.33):
+  /vite-node@0.28.5(@types/node@20.4.1):
     resolution: {integrity: sha512-LmXb9saMGlrMZbXTvOveJKwMTBTNUH66c8rJnQ0ZPNX+myPEol64+szRzXtV5ORb0Hb/91yq+/D3oERoyAt6LA==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
@@ -8259,7 +8265,7 @@ packages:
       picocolors: 1.0.0
       source-map: 0.6.1
       source-map-support: 0.5.21
-      vite: 4.4.2(@types/node@14.18.33)
+      vite: 4.4.2(@types/node@20.4.1)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -8271,7 +8277,7 @@ packages:
       - terser
     dev: true
 
-  /vite@4.4.2(@types/node@14.18.33):
+  /vite@4.4.2(@types/node@20.4.1):
     resolution: {integrity: sha512-zUcsJN+UvdSyHhYa277UHhiJ3iq4hUBwHavOpsNUGsTgjBeoBlK8eDt+iT09pBq0h9/knhG/SPrZiM7cGmg7NA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -8299,7 +8305,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 14.18.33
+      '@types/node': 20.4.1
       esbuild: 0.18.11
       postcss: 8.4.25
       rollup: 3.26.2

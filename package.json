@@ -1,7 +1,6 @@
 {
   "name": "japanese-syntax-checker",
   "license": "MIT",
-  "type": "module",
   "scripts": {
     "start": "vercel dev"
   },
@@ -15,6 +14,7 @@
     "zod": "^3.21.4"
   },
   "devDependencies": {
+    "@types/node": "^20.4.1",
     "typescript": "^5.1.6",
     "vercel": "^31.0.1"
   }
