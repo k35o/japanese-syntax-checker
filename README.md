@@ -12,7 +12,7 @@ type Request = {
 ```ts
 type Request = {
   text: string;
-  messages: {
+  mags: {
     type: "lint";
     ruleId: string;
     message: string;
