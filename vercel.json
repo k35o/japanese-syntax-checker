@@ -1,3 +1,8 @@
 {
+  "functions": {
+    "api/index.ts": {
+      "includeFiles": ".textlintrc"
+    }
+  },
   "regions": ["hnd1"]
 }
