@@ -1,0 +1,15 @@
+{
+  "tasks": {
+    "start": "deno run --allow-read --allow-env --allow-net --allow-sys main.ts",
+    "watch": "deno run --allow-read --allow-env --allow-net --allow-sys --unstable-hmr main.ts"
+  },
+  "imports": {
+    "hono": "https://deno.land/x/hono@v4.0.2/mod.ts",
+    "@textlint/kernel": "npm:@textlint/kernel@14.0.2",
+    "textlint": "npm:textlint@14.0.2",
+    "textlint-rule-no-dropping-the-ra": "npm:textlint-rule-no-dropping-the-ra@3.0.0",
+    "textlint-rule-preset-ja-technical-writing": "npm:textlint-rule-preset-ja-technical-writing@10.0.1",
+    "textlint-rule-preset-jtf-style": "npm:textlint-rule-preset-jtf-style@2.3.14",
+    "zod": "https://deno.land/x/zod@v3.22.4/mod.ts"
+  }
+}
