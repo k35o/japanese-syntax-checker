@@ -13,7 +13,6 @@
     "hono": "npm:hono@4.8.10",
     "sudachi-synonyms-dictionary": "npm:sudachi-synonyms-dictionary@14.0.0",
     "textlint": "npm:textlint@15.2.1",
-    "textlint-rule-general-novel-style-ja": "npm:textlint-rule-general-novel-style-ja@1.3.0",
     "textlint-rule-ja-hiragana-fukushi": "npm:textlint-rule-ja-hiragana-fukushi@1.3.0",
     "textlint-rule-ja-hiragana-hojodoushi": "npm:textlint-rule-ja-hiragana-hojodoushi@1.1.0",
     "textlint-rule-ja-hiragana-keishikimeishi": "npm:textlint-rule-ja-hiragana-keishikimeishi@1.1.0",

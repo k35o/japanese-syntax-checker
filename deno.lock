@@ -9,7 +9,6 @@
     "npm:@textlint/textlint-plugin-markdown@15.2.1": "15.2.1",
     "npm:hono@4.8.10": "4.8.10",
     "npm:sudachi-synonyms-dictionary@14.0.0": "14.0.0",
-    "npm:textlint-rule-general-novel-style-ja@1.3.0": "1.3.0",
     "npm:textlint-rule-ja-hiragana-fukushi@1.3.0": "1.3.0",
     "npm:textlint-rule-ja-hiragana-hojodoushi@1.1.0": "1.1.0",
     "npm:textlint-rule-ja-hiragana-keishikimeishi@1.1.0": "1.1.0",
@@ -148,7 +147,7 @@
       "integrity": "sha512-mOB85gFGnSx6LgoUdCQFyATjcfsi0UaWO8Q4EBna/cq+ZGlmg2vcDGozk1hNLhX8u1PMzZDxDwrQOqx1zW+42w==",
       "dependencies": [
         "sudachi-synonyms-dictionary",
-        "textlint-rule-helper@2.3.1",
+        "textlint-rule-helper",
         "tiny-segmenter"
       ]
     },
@@ -1408,9 +1407,6 @@
       "integrity": "sha512-XmOWe7eyHYH14cLdVPoyg+GOH3rYX++KpzrylJwSW98t3Nk+U8XOl8FWKOgwtzdb8lXGf6zYwDUzeHMWfxasyg==",
       "bin": true
     },
-    "kansuji@1.1.0": {
-      "integrity": "sha512-zw+QQSoH/nLvm5yJVPUY6kCP9lDSfVxO8poib8lOwruHqxOUZgKzMEdog1/PAen4G8ppoMulffzeVfCGgHgyhw=="
-    },
     "keyv@5.4.0": {
       "integrity": "sha512-TMckyVjEoacG5IteUpUrOBsFORtheqziVyyY2dLUwg1jwTb8u48LX4TgmtogkNl9Y9unaEJ1luj10fGyjMGFOQ==",
       "dependencies": [
@@ -1505,8 +1501,8 @@
       "integrity": "sha512-9cKl33Y21lyckGzpSmEQnIDjEfeeWelN5s1kUW1LwdB0Fkuq2u+4GdqcGEygYxJE8GVqCl0741bYXHgamfWAZA==",
       "dependencies": [
         "escape-string-regexp@4.0.0",
-        "unist-util-is@4.1.0",
-        "unist-util-visit-parents@3.1.1"
+        "unist-util-is",
+        "unist-util-visit-parents"
       ]
     },
     "mdast-util-footnote@0.1.7": {
@@ -2290,25 +2286,12 @@
     "text-table@0.2.0": {
       "integrity": "sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw=="
     },
-    "textlint-rule-general-novel-style-ja@1.3.0": {
-      "integrity": "sha512-E8yAWhxJIJ3d69waafTtchz+BvxB00S68N2Gt+E6ZeG913FYOHYflAdOSqly2QDj4cvsKwHAX9UZ4uiRcbr02w==",
-      "dependencies": [
-        "kansuji",
-        "textlint-rule-helper@1.2.0"
-      ]
-    },
-    "textlint-rule-helper@1.2.0": {
-      "integrity": "sha512-yJmVbmyuUPOndKsxOijpx/G7mwybXXf4M10U2up0BeIZSN+6drUl+aSKAoC+RUHY7bG4ogLwRcmWoNG1lSrRIQ==",
-      "dependencies": [
-        "unist-util-visit@1.4.1"
-      ]
-    },
     "textlint-rule-helper@2.3.1": {
       "integrity": "sha512-b1bijvyiUmKinfFE5hkQMSXs3Ky8jyZ3Y6SOoTRJKV9HLL2LWUVFAUezO7z4FpAkVvYruDYWCwA5qWV8GmvyUw==",
       "dependencies": [
         "@textlint/ast-node-types@13.4.1",
         "structured-source",
-        "unist-util-visit@2.0.3"
+        "unist-util-visit"
       ]
     },
     "textlint-rule-ja-hiragana-fukushi@1.3.0": {
@@ -2348,7 +2331,7 @@
       "integrity": "sha512-h5sljMUPD/buXR7B6DYPdd7B5EkXz5+wKtVhU4juti/QCJ8ngXpv55owhzWEV4ZqH1pTNnBess+38Yy4sI+R+w==",
       "dependencies": [
         "check-ends-with-period",
-        "textlint-rule-helper@2.3.1"
+        "textlint-rule-helper"
       ]
     },
     "textlint-rule-ja-no-orthographic-variants@2.0.0": {
@@ -2364,7 +2347,7 @@
         "kuromojin@3.0.1",
         "morpheme-match@2.0.4",
         "morpheme-match-all@2.0.5",
-        "textlint-rule-helper@2.3.1",
+        "textlint-rule-helper",
         "textlint-util-to-string"
       ]
     },
@@ -2378,7 +2361,7 @@
       "integrity": "sha512-os+p7dS9Op4PtZV7B9/wnzN5qpDO2WR2kj7nTnqEPbApS06AXX+qf5eH3fKdm4blzUCcPF5ozMN8zbs3AJUAug==",
       "dependencies": [
         "match-index",
-        "textlint-rule-helper@2.3.1"
+        "textlint-rule-helper"
       ]
     },
     "textlint-rule-max-ten@5.0.0": {
@@ -2386,7 +2369,7 @@
       "dependencies": [
         "kuromojin@3.0.1",
         "sentence-splitter",
-        "textlint-rule-helper@2.3.1",
+        "textlint-rule-helper",
         "textlint-util-to-string"
       ]
     },
@@ -2401,7 +2384,7 @@
       "dependencies": [
         "kuromojin@3.0.1",
         "sentence-splitter",
-        "textlint-rule-helper@2.3.1"
+        "textlint-rule-helper"
       ]
     },
     "textlint-rule-no-doubled-joshi@5.1.0": {
@@ -2409,7 +2392,7 @@
       "dependencies": [
         "kuromojin@3.0.1",
         "sentence-splitter",
-        "textlint-rule-helper@2.3.1",
+        "textlint-rule-helper",
         "textlint-util-to-string"
       ]
     },
@@ -2417,13 +2400,13 @@
       "integrity": "sha512-KbSIlcxj1kLs4sGSMSLGA8OmgRoaPAWtodJaGEyEUiy7uiZM/VPqYALpuD8vf16N1OR5SM/bXXeZFME65r8ZgQ==",
       "dependencies": [
         "kuromojin@3.0.1",
-        "textlint-rule-helper@2.3.1"
+        "textlint-rule-helper"
       ]
     },
     "textlint-rule-no-hankaku-kana@2.0.1": {
       "integrity": "sha512-39s94HK6V1xnII1haYiYQnWy1YQAKK7Zj0mcpUMFHHC4M5JdsRnhGs6DQPVEff0gQIFV0iuDNlofXt15kjMtEA==",
       "dependencies": [
-        "textlint-rule-helper@2.3.1",
+        "textlint-rule-helper",
         "textlint-tester"
       ]
     },
@@ -2431,7 +2414,7 @@
       "integrity": "sha512-SmALtOFbtmJ//k2iLMvtqhGrgJ/6uDVZFK7TBj2npVAbt10VxgLL87K+62pQ/BqiN9DpOVObshVFdug7lUOKHw==",
       "dependencies": [
         "analyze-desumasu-dearu",
-        "textlint-rule-helper@2.3.1"
+        "textlint-rule-helper"
       ]
     },
     "textlint-rule-no-mixed-zenkaku-and-hankaku-alphabet@1.0.1": {
@@ -2439,7 +2422,7 @@
       "dependencies": [
         "match-index",
         "moji",
-        "textlint-rule-helper@2.3.1"
+        "textlint-rule-helper"
       ]
     },
     "textlint-rule-prh@5.3.0": {
@@ -2447,7 +2430,7 @@
       "dependencies": [
         "@babel/parser@7.28.0",
         "prh",
-        "textlint-rule-helper@2.3.1",
+        "textlint-rule-helper",
         "untildify@3.0.3"
       ]
     },
@@ -2634,9 +2617,6 @@
     "unique-concat@0.2.2": {
       "integrity": "sha512-nFT3frbsvTa9rrc71FJApPqXF8oIhVHbX3IWgObQi1mF7WrW48Ys70daL7o4evZUtmUf6Qn6WK0LbHhyO0hpXw=="
     },
-    "unist-util-is@3.0.0": {
-      "integrity": "sha512-sVZZX3+kspVNmLWBPAB6r+7D9ZgAFPNWm66f7YNb420RlQSbn+n8rG8dGZSkrER7ZIXGQYNm5pqC3v3HopH24A=="
-    },
     "unist-util-is@4.1.0": {
       "integrity": "sha512-ZOQSsnce92GrxSqlnEEseX0gi7GH9zTJZ0p9dtu87WRb/37mMPO2Ilx1s/t9vBHrFhbgweUwb+t7cIn5dxPhZg=="
     },
@@ -2646,31 +2626,19 @@
         "@types/unist"
       ]
     },
-    "unist-util-visit-parents@2.1.2": {
-      "integrity": "sha512-DyN5vD4NE3aSeB+PXYNKxzGsfocxp6asDc2XXE3b0ekO2BaRUpBicbbUygfSvYfUz1IkmjFR1YF7dPklraMZ2g==",
-      "dependencies": [
-        "unist-util-is@3.0.0"
-      ]
-    },
     "unist-util-visit-parents@3.1.1": {
       "integrity": "sha512-1KROIZWo6bcMrZEwiH2UrXDyalAa0uqzWCxCJj6lPOvTve2WkfgCytoDTPaMnodXh1WrXOq0haVYHj99ynJlsg==",
       "dependencies": [
         "@types/unist",
-        "unist-util-is@4.1.0"
-      ]
-    },
-    "unist-util-visit@1.4.1": {
-      "integrity": "sha512-AvGNk7Bb//EmJZyhtRUnNMEpId/AZ5Ph/KUpTI09WHQuDZHKovQ1oEv3mfmKpWKtoMzyMC4GLBm1Zy5k12fjIw==",
-      "dependencies": [
-        "unist-util-visit-parents@2.1.2"
+        "unist-util-is"
       ]
     },
     "unist-util-visit@2.0.3": {
       "integrity": "sha512-iJ4/RczbJMkD0712mGktuGpm/U4By4FfDonL7N/9tATGIF4imikjOuagyMY53tnZq3NP6BcmlrHhEKAfGWjh7Q==",
       "dependencies": [
         "@types/unist",
-        "unist-util-is@4.1.0",
-        "unist-util-visit-parents@3.1.1"
+        "unist-util-is",
+        "unist-util-visit-parents"
       ]
     },
     "unpipe@1.0.0": {
@@ -2886,7 +2854,6 @@
       "npm:@textlint/textlint-plugin-markdown@15.2.1",
       "npm:hono@4.8.10",
       "npm:sudachi-synonyms-dictionary@14.0.0",
-      "npm:textlint-rule-general-novel-style-ja@1.3.0",
       "npm:textlint-rule-ja-hiragana-fukushi@1.3.0",
       "npm:textlint-rule-ja-hiragana-hojodoushi@1.1.0",
       "npm:textlint-rule-ja-hiragana-keishikimeishi@1.1.0",

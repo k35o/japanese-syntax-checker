@@ -22,7 +22,6 @@ const loadExternallintRule = async() => {
     import('@textlint-ja/textlint-rule-no-insert-dropping-sa'),
     import('@textlint-ja/textlint-rule-no-synonyms'),
     import('textlint-rule-ja-no-orthographic-variants'),
-    import('textlint-rule-general-novel-style-ja'),
   ]);
 }
 

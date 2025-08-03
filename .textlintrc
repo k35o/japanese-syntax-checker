@@ -45,7 +45,6 @@
     "@textlint-ja/preset-ai-writing": true,
     "@textlint-ja/textlint-rule-no-insert-dropping-sa": true,
     "@textlint-ja/no-synonyms": true,
-    "ja-no-orthographic-variants": true,
-    "general-novel-style-ja": true
+    "ja-no-orthographic-variants": true
   }
 }
