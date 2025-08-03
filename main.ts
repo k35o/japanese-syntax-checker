@@ -1,4 +1,5 @@
-import { Hono, validator } from 'hono';
+import { Hono } from 'hono';
+import { validator } from 'hono/validator'
 import { z } from "zod";
 import { lintText } from "./textlint.ts";
 
@@ -10,7 +11,6 @@ const schema = z.object({
 
 app.post('/api',
   validator('json', (value, c) => {
-    console.log(value);
     const parsed = schema.safeParse(value);
     if (!parsed.success) {
       return c.json({
