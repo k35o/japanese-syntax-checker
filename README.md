@@ -1,7 +1,9 @@
 ## Japanese Syntax Checker
+
 [textlint](https://textlint.github.io/)を用いてpostされた日本語の構文チェックを行い、その結果を返します。
 
 ### Request型
+
 ```ts
 type Request = {
   text: string;
@@ -9,6 +11,7 @@ type Request = {
 ```
 
 ### Response型
+
 ```ts
 type Request = {
   text: string;

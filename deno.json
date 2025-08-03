@@ -4,12 +4,32 @@
     "watch": "deno run --allow-read --allow-env --allow-net --allow-sys --unstable-hmr main.ts"
   },
   "imports": {
-    "hono": "https://deno.land/x/hono@v4.0.2/mod.ts",
-    "@textlint/kernel": "npm:@textlint/kernel@14.0.2",
-    "textlint": "npm:textlint@14.0.2",
+    "@textlint-ja/textlint-rule-no-insert-dropping-sa": "npm:@textlint-ja/textlint-rule-no-insert-dropping-sa@2.0.1",
+    "@textlint-ja/textlint-rule-no-synonyms": "npm:@textlint-ja/textlint-rule-no-synonyms@1.3.0",
+    "@textlint-ja/textlint-rule-preset-ai-writing": "npm:@textlint-ja/textlint-rule-preset-ai-writing@1.6.0",
+    "@textlint/kernel": "npm:@textlint/kernel@15.2.1",
+    "@textlint/module-interop": "npm:@textlint/module-interop@15.2.1",
+    "@textlint/textlint-plugin-markdown": "npm:@textlint/textlint-plugin-markdown@15.2.1",
+    "hono": "npm:hono@4.8.10",
+    "sudachi-synonyms-dictionary": "npm:sudachi-synonyms-dictionary@14.0.0",
+    "textlint": "npm:textlint@15.2.1",
+    "textlint-rule-ja-hiragana-fukushi": "npm:textlint-rule-ja-hiragana-fukushi@1.3.0",
+    "textlint-rule-ja-hiragana-hojodoushi": "npm:textlint-rule-ja-hiragana-hojodoushi@1.1.0",
+    "textlint-rule-ja-hiragana-keishikimeishi": "npm:textlint-rule-ja-hiragana-keishikimeishi@1.1.0",
+    "textlint-rule-ja-no-abusage": "npm:textlint-rule-ja-no-abusage@3.0.0",
+    "textlint-rule-ja-no-mixed-period": "npm:textlint-rule-ja-no-mixed-period@3.0.1",
+    "textlint-rule-ja-no-orthographic-variants": "npm:textlint-rule-ja-no-orthographic-variants@2.0.0",
+    "textlint-rule-ja-no-redundant-expression": "npm:textlint-rule-ja-no-redundant-expression@4.0.1",
+    "textlint-rule-ja-simple-user-dictionary": "npm:textlint-rule-ja-simple-user-dictionary@1.0.1",
+    "textlint-rule-max-kanji-continuous-len": "npm:textlint-rule-max-kanji-continuous-len@1.1.1",
+    "textlint-rule-max-ten": "npm:textlint-rule-max-ten@5.0.0",
+    "textlint-rule-no-double-negative-ja": "npm:textlint-rule-no-double-negative-ja@2.0.1",
+    "textlint-rule-no-doubled-conjunction": "npm:textlint-rule-no-doubled-conjunction@3.0.0",
+    "textlint-rule-no-doubled-joshi": "npm:textlint-rule-no-doubled-joshi@5.1.0",
     "textlint-rule-no-dropping-the-ra": "npm:textlint-rule-no-dropping-the-ra@3.0.0",
-    "textlint-rule-preset-ja-technical-writing": "npm:textlint-rule-preset-ja-technical-writing@10.0.1",
-    "textlint-rule-preset-jtf-style": "npm:textlint-rule-preset-jtf-style@2.3.14",
-    "zod": "https://deno.land/x/zod@v3.22.4/mod.ts"
+    "textlint-rule-no-hankaku-kana": "npm:textlint-rule-no-hankaku-kana@2.0.1",
+    "textlint-rule-no-mix-dearu-desumasu": "npm:textlint-rule-no-mix-dearu-desumasu@6.0.4",
+    "textlint-rule-no-mixed-zenkaku-and-hankaku-alphabet": "npm:textlint-rule-no-mixed-zenkaku-and-hankaku-alphabet@1.0.1",
+    "zod": "npm:zod@4.0.14"
   }
 }
